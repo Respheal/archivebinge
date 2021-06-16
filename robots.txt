@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /reader/
+Crawl-delay: 30
