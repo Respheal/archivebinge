@@ -30,9 +30,24 @@ mv ./crawler/supervisor.sample.py ./crawler/supervisor.py
 mv ./includes/conf.inc.sample.php ./includes/conf.inc.php
 ```
 
+To use the social media logins, you will need to configure their OAuth settings:
+
+Facebook:
+See: https://developers.facebook.com/docs/facebook-login/web/
+Config: ./includes/auth/facebook.settings.php
+
+Twitter:
+See: https://developer.twitter.com/en/docs/authentication/guides/log-in-with-twitter
+Config: ./includes/auth/twitter.settings.php
+
+Google:
+See: https://developers.google.com/identity/protocols/oauth2
+Config: ./includes/auth/google.settings.php
+
 # Usage Notes
 
 1. Whichever user has an ID of 1 in the database is the admin user.
+2. I make absolutely no promises about the functionality, readability, usability of any code. Use at your own risk. Not all files included are necessary for functionality.
 
 # Crawlers
 All scrapy crawlers are stored under ./crawler/archivebinger/spiders. You can run the spiders manually like so:

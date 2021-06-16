@@ -1,0 +1,47 @@
+.wrapper{width:600px; margin-left:auto;margin-right:auto;}
+.welcome_txt{
+    margin: 20px;
+    background-color: #EBEBEB;
+    padding: 10px;
+    border: #D6D6D6 solid 1px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+.tweet_box{
+    margin: 20px;
+    background-color: #FFF0DD;
+    padding: 10px;
+    border: #F7CFCF solid 1px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+.tweet_box img{float: left;}
+.tweet_box textarea{
+    width: 500px;
+    border: #F7CFCF solid 1px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+.tweet_list{
+    margin: 20px;
+    padding:20px;
+    background-color: #E2FFF9;
+    border: #CBECCE solid 1px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+.tweet_list ul{
+    padding: 0px;
+    font-family: verdana;
+    font-size: 12px;
+    color: #5C5C5C;
+}
+.tweet_list li{
+    border-bottom: silver dashed 1px;
+    list-style: none;
+    padding: 5px;
+}
