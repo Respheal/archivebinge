@@ -67,3 +67,6 @@ This spider will find a reference to the second page on the first page of a comi
 ```
 
 This will launch a crawler through all of the pages of the referenced comic.
+
+## License
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/
