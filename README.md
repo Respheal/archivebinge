@@ -1,8 +1,7 @@
 # Archive Binge
-About Archive Binge: <br>
-AB was a webcomic aggregator and reader. As the original developer is no longer able to work on the project, the source code is made available here for use, reproduction, modification, display, and distribution. Please see the license for more details on what you may do with this source code. The main point of using the MPL 2.0 license is that, if you use the code, you must provide access to the source code, whether it be linking to this repo (if unmodified), or linking to your own public repo.
+AB was a webcomic aggregator and reader. As the original developer is no longer able to work on the project, the source code is made available here for use, reproduction, modification, display, and distribution. Please see the license for more details on what you may do with this source code. If you use this code, you must provide access to the source code, whether it be linking to this repo (if unmodified), or linking to your own public repo.
 
-# Installation
+## Installation
 ```sh
 git clone git@github.com:Respheal/archivebinge.git
 cd ./archivebinge/
@@ -35,33 +34,33 @@ mv ./includes/privacy.inc.sample.php ./includes/privacy.inc.php
 
 To use the social media logins, you will need to configure their OAuth settings:
 
-Facebook:
-See: https://developers.facebook.com/docs/facebook-login/web/
+<b>Facebook:</b><br />
+See: https://developers.facebook.com/docs/facebook-login/web/<br />
 Config: ./includes/auth/facebook.settings.php
 
-Twitter:
-See: https://developer.twitter.com/en/docs/authentication/guides/log-in-with-twitter
+<b>Twitter:</b><br />
+See: https://developer.twitter.com/en/docs/authentication/guides/log-in-with-twitter<br />
 Config: ./includes/auth/twitter.settings.php
 
-Google:
-See: https://developers.google.com/identity/protocols/oauth2
+<b>Google:</b><br />
+See: https://developers.google.com/identity/protocols/oauth2<br />
 Config: ./includes/auth/google.settings.php
 
-# Usage Notes
+## Usage Notes
 
 1. Whichever user has an ID of 1 in the database is the admin user.
 2. I make absolutely no promises about the functionality, readability, usability of any code. Use at your own risk.
 3. Not all files included are necessary for functionality (see: some tutorial files that got left in)
 4. Any updates to this repo will not be pushed to archivebinge.com. Any updates to this repo are meant for use in derivative sites and/or repos
 
-# Crawlers
+## Crawlers
 All scrapy crawlers are stored under ./crawler/archivebinger/spiders. You can run the spiders manually like so:
 
 ```sh
 .crawler/crawlerenv/bin/scrapy crawl typefinder -a starturl='https://comic.com/first-page' -a secondurl='https://comic.com/second-page' -a cid='crawldata.json'
 ```
 
-This spider will find a reference to the second page on the first page of a comic and note that for the crawler. The output file, crawldata.json, contains variables used in args in the following:
+This spider will find a reference to the second page on the first page of a comic and note that for future crawling. The output file, crawldata.json, contains variables used in the following:
 
 ```sh
 .crawler/crawlerenv/bin/scrapy crawl superbinge -a starturl="https://comic.com/any-page" -a position="inner" -a tag="rel" -a identifier="next"
