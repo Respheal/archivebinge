@@ -129,5 +129,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Archive Binge files
-crawler/crawldumps/
+# Archive Binge files (may contain user credentials or user-uploaded files)
+crawler/crawldumps/*
+crawler/nocrawl/*
+crawler/minisup.py
+assets/usr_imgs/*
+includes/conf.inc.php
