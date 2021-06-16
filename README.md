@@ -52,6 +52,7 @@ Config: ./includes/auth/google.settings.php
 2. I make absolutely no promises about the functionality, readability, usability of any code. Use at your own risk.
 3. Not all files included are necessary for functionality (see: some tutorial files that got left in)
 4. Any updates to this repo will not be pushed to archivebinge.com. Any updates to this repo are meant for use in derivative sites and/or repos
+5. Pull requests will be accepted at my leisure (likely never). It's recommended to fork instead.
 
 ## Crawlers
 All scrapy crawlers are stored under ./crawler/archivebinger/spiders. You can run the spiders manually like so:
