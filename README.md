@@ -30,7 +30,7 @@ mv ./crawler/minisup.sample.py ./crawler/minisup.py
 mv ./crawler/supervisor.sample.py ./crawler/supervisor.py
 mv ./includes/conf.inc.sample.php ./includes/conf.inc.php
 mv ./includes/tos.inc.sample.php ./includes/tos.inc.php
-mv ./includes/privacy.inc.sample.php ./includes/privacy.inc.php 
+mv ./includes/privacy.inc.sample.php ./includes/privacy.inc.php
 ```
 
 To use the social media logins, you will need to configure their OAuth settings:
@@ -52,6 +52,7 @@ Config: ./includes/auth/google.settings.php
 1. Whichever user has an ID of 1 in the database is the admin user.
 2. I make absolutely no promises about the functionality, readability, usability of any code. Use at your own risk.
 3. Not all files included are necessary for functionality (see: some tutorial files that got left in)
+4. Any updates to this repo will not be pushed to archivebinge.com. Any updates to this repo are meant for use in derivative sites and/or repos
 
 # Crawlers
 All scrapy crawlers are stored under ./crawler/archivebinger/spiders. You can run the spiders manually like so:
