@@ -1,4 +1,4 @@
-#!/full/path/to/crawlerenv/bin/python2.7
+#!/full/path/to/archivebinge/crawler/crawlerenv/bin/python2.7
 '''Grabs comics that need crawled from the DB and then divvys out the task to
 the appropriate crawler. This is the mini version that only grabs that last
 few pages. Use supervisor.py for a complete crawl.'''
