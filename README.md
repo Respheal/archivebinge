@@ -1,6 +1,11 @@
 # Archive Binge
 AB was a webcomic aggregator and reader. As the original developer is no longer able to work on the project, the source code is made available here for use, reproduction, modification, display, and distribution. Please see the license for more details on what you may do with this source code. If you use this code, you must provide access to the source code, whether it be linking to this repo (if unmodified), or linking to your own public repo.
 
+## Requirements
+* PHP 7.3+
+* Python 2.7
+* MySQL (Preferably MariaDB 10.2+)
+
 ## Installation
 ```sh
 git clone git@github.com:Respheal/archivebinge.git
