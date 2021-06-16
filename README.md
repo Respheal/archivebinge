@@ -30,6 +30,10 @@ mv ./crawler/supervisor.sample.py ./crawler/supervisor.py
 mv ./includes/conf.inc.sample.php ./includes/conf.inc.php
 ```
 
+# Usage Notes
+
+1. Whichever user has an ID of 1 in the database is the admin user.
+
 # Crawlers
 All scrapy crawlers are stored under ./crawler/archivebinger/spiders. You can run the spiders manually like so:
 
