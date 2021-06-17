@@ -51,6 +51,8 @@ Config: ./includes/auth/twitter.settings.php
 See: https://developers.google.com/identity/protocols/oauth2<br />
 Config: ./includes/auth/google.settings.php
 
+Lastly, although you may create a database yourself to your own specifications, I've included a dump of an empty database which you may import: `./mysql_dump/ab_database.sql`
+
 ## Usage Notes
 
 1. Whichever user has an ID of 1 in the database is the admin user.
