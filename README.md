@@ -59,6 +59,14 @@ Config: ./includes/auth/google.settings.php
 4. Any updates to this repo will not be pushed to archivebinge.com. Any updates to this repo are meant for use in derivative sites and/or repos
 5. Pull requests will be accepted at my leisure (likely never). It's recommended to fork instead.
 
+## Crons
+In order to collect comic updates, AB relies on two crons:
+```
+23,53 * * * * cd /path/to/public_html/crawler; ./minisup.py 2>> /path/to/public_html/crawler/minisuplog
+*/15 * * * * cd /path/to/public_html/crawler; ./supervisor.py 2>> /path/to/public_html/crawler/supervisorlog
+```
+`minisup.py` collects updates for existing comics. `supervisor.py` collects updates for newly-added comics. You may set them to run at whatever intervals you like. Do check on them occasionally though--some comics may trigger an infinite-crawl bug, resulting in multiple processes, which may result in server resource overages.
+
 ## Crawlers
 All scrapy crawlers are stored under ./crawler/archivebinger/spiders. You can run the spiders manually like so:
 
