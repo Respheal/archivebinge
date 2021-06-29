@@ -130,6 +130,7 @@ dmypy.json
 .pyre/
 
 # Archive Binge files (may contain user credentials or user-uploaded files)
+blog/
 crawler/crawldumps/*
 crawler/nocrawl/*
 crawler/minisup.py

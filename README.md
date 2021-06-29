@@ -1,5 +1,5 @@
 # Archive Binge
-AB was a webcomic aggregator and reader. As the original developer is no longer able to work on the project, the source code is made available here for use, reproduction, modification, display, and distribution. Please see the license for more details on what you may do with this source code. If you use this code, you must provide access to the source code, whether it be linking to this repo (if unmodified), or linking to your own public repo.
+AB was a webcomic aggregator and reader. As the original developer is no longer able to work on the project, the source code is made available here for use, reproduction, modification, display, distribution, and community contribution. Please see the license for more details on what you may do with this source code. If you use this code, you must provide access to the source code, whether it be linking to this repo (if unmodified), or linking to your own public repo.
 
 ## Requirements
 * PHP 7.3+
@@ -35,6 +35,9 @@ mv ./crawler/supervisor.sample.py ./crawler/supervisor.py
 mv ./includes/conf.inc.sample.php ./includes/conf.inc.php
 mv ./includes/tos.inc.sample.php ./includes/tos.inc.php
 mv ./includes/privacy.inc.sample.php ./includes/privacy.inc.php
+mv ./includes/auth/facebook.settings.sample.php ./includes/auth/facebook.settings.php
+mv ./includes/auth/google.settings.sample.php ./includes/auth/google.settings.php
+mv ./includes/auth/twitter.settings.sample.php ./includes/auth/twitter.settings.php
 ```
 
 To use the social media logins, you will need to configure their OAuth settings:
@@ -58,8 +61,7 @@ Lastly, although you may create a database yourself to your own specifications, 
 1. Whichever user has an ID of 1 in the database is the admin user.
 2. I make absolutely no promises about the functionality, readability, usability of any code. Use at your own risk.
 3. Not all files included are necessary for functionality (see: some tutorial files that got left in)
-4. Any updates to this repo will not be pushed to archivebinge.com. Any updates to this repo are meant for use in derivative sites and/or repos
-5. Pull requests will be accepted at my leisure (likely never). It's recommended to fork instead.
+4. Updates to this repo may be pushed to archivebinge.com and are available for use in derivative sites and/or repos
 
 ## Crons
 In order to collect comic updates, AB relies on two crons:
