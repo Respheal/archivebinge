@@ -141,6 +141,9 @@ assets/usr_imgs/*
 includes/conf.inc.php
 includes/privacy.inc.php
 includes/tos.inc.php
+includes/auth/facebook.settings.php
+includes/auth/google.settings.php
+includes/auth/twitter.settings.php
 privacy-archive/*
 .well-known/
 .ftpquota
