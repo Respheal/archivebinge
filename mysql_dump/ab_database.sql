@@ -1,10 +1,10 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.5
+-- version 4.9.7
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 16, 2021 at 08:19 PM
--- Server version: 10.2.38-MariaDB
+-- Generation Time: Jun 30, 2021 at 10:22 AM
+-- Server version: 10.2.39-MariaDB
 -- PHP Version: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -21,6 +21,19 @@ SET time_zone = "+00:00";
 --
 -- Database: `ab_database`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admins`
+--
+
+CREATE TABLE `admins` (
+  `admin_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `admin_email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `admin_level` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -566,6 +579,13 @@ INSERT INTO `warnings` (`warning_id`, `warning_name`, `warning_category`) VALUES
 --
 
 --
+-- Indexes for table `admins`
+--
+ALTER TABLE `admins`
+  ADD PRIMARY KEY (`admin_id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
 -- Indexes for table `comics`
 --
 ALTER TABLE `comics`
@@ -669,6 +689,12 @@ ALTER TABLE `warnings`
 --
 
 --
+-- AUTO_INCREMENT for table `admins`
+--
+ALTER TABLE `admins`
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `comics`
 --
 ALTER TABLE `comics`
@@ -684,7 +710,7 @@ ALTER TABLE `comic_owners`
 -- AUTO_INCREMENT for table `comic_rating`
 --
 ALTER TABLE `comic_rating`
-  MODIFY `rating_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `rating_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `comic_tags`
@@ -743,6 +769,12 @@ ALTER TABLE `warnings`
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `admins`
+--
+ALTER TABLE `admins`
+  ADD CONSTRAINT `admins_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `comic_owners`
