@@ -18,7 +18,20 @@ require_once("includes/css.inc.php");
 
 <h1>Contact</h1>
 
-<p>If you need to report a problem or <a href="/tos">Terms of Service</a> violation, need help with your account or claiming a comic, or have feedback about Archive Binge, please email <a href="mailto:admin@archivebinge.com">admin@archivebinge.com</a></p>
+<h2>Email</h2>
+
+<p>Issues with comic listings, your account, site problems: <a href="mailto:support@DOMAIN.com">support@DOMAIN.com</a></p>
+<p>Address for feedback, suggestions, or bug reports: <a href="mailto:feedback@DOMAIN.com">feedback@DOMAIN.com</a></p>
+<p>Abuse complaints for listings that violate the <a href="/tos">Terms of Service</a>: <a href="mailto:abuse@DOMAIN.com">abuse@DOMAIN.com</a><p>
+
+<h2>Social Media</h2>
+
+<p>Twitter: <a href="https://twitter.com/HANDLE">@HANDLE</a></p>
+<p>Facebook: <a href="https://www.facebook.com/HANDLE">@HANDLE</a></p>
+
+<h2>Other</h2>
+
+<p></p>
 
 </div>
 
