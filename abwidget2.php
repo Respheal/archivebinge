@@ -3,7 +3,7 @@ header('Content-Type: application/javascript');
 
 require_once("includes/conf.inc.php");
 $conn = dbConnect();
-$imgpath = "https://DOMAIN.COM/assets/images/hotlink-ok/";
+$imgpath = "https://archivebinge.com/assets/images/hotlink-ok/";
 
 $comic = mysqli_real_escape_string($conn, filter_var($_GET['comic'], FILTER_SANITIZE_NUMBER_INT));
 $info = filter_var($_GET['info-only'], FILTER_SANITIZE_STRING);
@@ -33,10 +33,10 @@ url = location.href;
 pageindex = pages.indexOf(url);
 
 if (pageindex < 0) {
-    document.write("<a href='https://DOMAIN.COM/comic/" + comic_id + "' title='Read this comic on Archive Binge'><img src='<?php echo $img; ?>' height='<?php echo $height;?>px' width='<?php echo $width;?>px' alt='Read on Archive Binge' class='ab_widget' /></a>");
+    document.write("<a href='https://archivebinge.com/comic/" + comic_id + "' title='Read this comic on Archive Binge'><img src='<?php echo $img; ?>' height='<?php echo $height;?>px' width='<?php echo $width;?>px' alt='Read on Archive Binge' class='ab_widget' /></a>");
 } else {
-    document.write("<a href='http://DOMAIN.COM/reader/" + comic_id + "/" + pageindex + "' title='Read this comic on Archive Binge'><img src='<?php echo $img; ?>' height='<?php echo $height;?>px' width='<?php echo $width;?>px' alt='Read on Archive Binge' class='ab_widget' /></a>");}
+    document.write("<a href='http://archivebinge.com/reader/" + comic_id + "/" + pageindex + "' title='Read this comic on Archive Binge'><img src='<?php echo $img; ?>' height='<?php echo $height;?>px' width='<?php echo $width;?>px' alt='Read on Archive Binge' class='ab_widget' /></a>");}
 
 <?php } else{ ?>
-document.write("<a href='https://DOMAIN.COM/comic/" + comic_id + "' title='Read this comic on Archive Binge'><img src='<?php echo $img; ?>' height='<?php echo $height;?>px' width='<?php echo $width;?>px' alt='Read on Archive Binge' class='ab_widget' /></a>");
+document.write("<a href='https://archivebinge.com/comic/" + comic_id + "' title='Read this comic on Archive Binge'><img src='<?php echo $img; ?>' height='<?php echo $height;?>px' width='<?php echo $width;?>px' alt='Read on Archive Binge' class='ab_widget' /></a>");
 <?php } $conn->close(); ?>
