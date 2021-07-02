@@ -19,3 +19,10 @@ function dbConnect($connectionType = 'mysqli'){
 	}
 }
 $secretkey = 'SECRET_KEY';
+$DOMAIN = 'DOMAIN.com'; //The base URL of your Archive Binge installation
+
+//Your contact email addresses:
+//If you intend to reuse the same address for these, consider rewording contact.php, as it treats them all as distinct.
+$SUPPORT_EMAIL = 'support@DOMAIN.com';
+$FEEDBACK_EMAIL = 'feedback@DOMAIN.com';
+$ABUSE_EMAIL = 'abuse@DOMAIN.com';

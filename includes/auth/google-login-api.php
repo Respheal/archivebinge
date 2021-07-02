@@ -1,4 +1,5 @@
 <?php
+require_once 'includes/conf.inc.php';
 
 class GoogleLoginApi
 {
@@ -16,7 +17,7 @@ class GoogleLoginApi
 		$http_code = curl_getinfo($ch,CURLINFO_HTTP_CODE);
 		if($http_code != 200)
 			//throw new Exception('Error : Failed to receieve access token');
-            header('Location: https://DOMAIN.com/login.php?error=1');
+            header('Location: https://'.$DOMAIN.'/login.php?error=1');
 
 		return $data;
 	}
@@ -33,7 +34,7 @@ class GoogleLoginApi
 		$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 		if($http_code != 200)
 			//throw new Exception('Error : Failed to get user information');
-            header('Location: https://DOMAIN.com/login.php?error=2');
+            header('Location: https://'.$DOMAIN.'/login.php?error=2');
 
 		return $data;
 	}

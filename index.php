@@ -1,6 +1,6 @@
 <?php require_once("includes/header.inc.php");
 
-$feed_url = 'https://DOMAIN.com/blog/feed/';
+$feed_url = 'https://'.$DOMAIN.'/blog/feed/';
 $content = file_get_contents($feed_url); // get XML string
 
 $conn = dbConnect();

@@ -28,6 +28,8 @@ Any instance of:
 * DATABASE_NAME should be your database name
 * SECRET_KEY should be a unique key used for encryption
 
+In `includes/conf.inc.sample.php`, update the SUPPORT_EMAIL, FEEDBACK_EMAIL, and ABUSE_EMAIL variables to your contact information.
+
 Files to rename:
 ```sh
 mv ./crawler/minisup.sample.py ./crawler/minisup.py
