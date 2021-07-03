@@ -14,6 +14,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:site_name" content="Archive Binge">
 <meta name="twitter:image:alt" content="">
-<meta name="twitter:site" content="@HANDLE">
+<meta name="twitter:site" content="@<?php echo $TW_HANDLE;?>">
 
     <title><?php require_once 'includes/title.inc.php';?></title>

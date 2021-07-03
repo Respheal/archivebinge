@@ -16,11 +16,10 @@ source ./crawler/crawlerenv/bin/activate
 pip install -U pip
 pip install -r ./crawler/requirements.txt
 ```
-Before use, you should update the following strings throughout the codebase.
+
+Before use, you should update the following strings throughout the codebase. For the frontend site, these variables are currently managed in `includes/conf.inc.php`, but may need to be updated in Python scripts
 
 Any instance of:
-* DOMAIN.COM should be updated to the host domain
-* HANDLE should be updated to a live social media handle
 * '/full/path/to/archivebinge/crawler/crawlerenv/' should be updated to the virtual env created above
 * DATABASE_HOST should be your database host (probably 'localhost')
 * DATABASE_USER should be your database user
@@ -28,7 +27,6 @@ Any instance of:
 * DATABASE_NAME should be your database name
 * SECRET_KEY should be a unique key used for encryption
 
-In `includes/conf.inc.sample.php`, update the SUPPORT_EMAIL, FEEDBACK_EMAIL, and ABUSE_EMAIL variables to your contact information.
 
 Files to rename:
 ```sh
@@ -37,24 +35,20 @@ mv ./crawler/supervisor.sample.py ./crawler/supervisor.py
 mv ./includes/conf.inc.sample.php ./includes/conf.inc.php
 mv ./includes/tos.inc.sample.php ./includes/tos.inc.php
 mv ./includes/privacy.inc.sample.php ./includes/privacy.inc.php
-mv ./includes/auth/facebook.settings.sample.php ./includes/auth/facebook.settings.php
-mv ./includes/auth/google.settings.sample.php ./includes/auth/google.settings.php
-mv ./includes/auth/twitter.settings.sample.php ./includes/auth/twitter.settings.php
 ```
 
-To use the social media logins, you will need to configure their OAuth settings:
+In `includes/conf.inc.php`, update the SUPPORT_EMAIL, FEEDBACK_EMAIL, and ABUSE_EMAIL variables to your contact information.
+
+To use the social media logins, you will need to configure their OAuth settings in `includes/conf.inc.php`:
 
 <b>Facebook:</b><br />
 See: https://developers.facebook.com/docs/facebook-login/web/<br />
-Config: ./includes/auth/facebook.settings.php
 
 <b>Twitter:</b><br />
 See: https://developer.twitter.com/en/docs/authentication/guides/log-in-with-twitter<br />
-Config: ./includes/auth/twitter.settings.php
 
 <b>Google:</b><br />
 See: https://developers.google.com/identity/protocols/oauth2<br />
-Config: ./includes/auth/google.settings.php
 
 Lastly, although you may create a database yourself to your own specifications, I've included a dump of an empty database which you may import: `./mysql_dump/ab_database.sql`
 

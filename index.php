@@ -1,8 +1,5 @@
 <?php require_once("includes/header.inc.php");
 
-$feed_url = 'https://'.$DOMAIN.'/blog/feed/';
-$content = file_get_contents($feed_url); // get XML string
-
 $conn = dbConnect();
 $date = date('Y-m-d H:i:s');
 $stmt = $conn->prepare("delete FROM user_cookies WHERE created < NOW() - INTERVAL 3 MONTH");
