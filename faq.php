@@ -101,7 +101,7 @@ $metaquestions = array(
 <p>If you want to go the self-hosting route, you can find some extra info here: <a href="https://nattosoup.blogspot.com/2017/06/self-hosting-your-webcomic-alternatives.html" target="_blank">Self-Hosting Your Webcomic: Alternatives to Tapas, Webtoons</a> or here: <a href="http://freejeeves.com/#creators" target="_blank">Free Jeeves</a></p>'),
     array(
         'question'=>'Any other issues/questions',
-        'answer'=>'<p>Email me at <a href="mailto:'.$SUPPORT_EMAIL.'">'.$SUPPORT_EMAIL.'</a> for issues with comic listings, your account, site problems, etc. Email <a href="mailto:'.$FEEDBACK_EMAIL.'">'.$FEEDBACK_EMAIL.'</a> if you have feedback or suggestions. You can also reach me on Twitter <a href="https://twitter.com/HANDLE">@HANDLE</a>.</p>')
+        'answer'=>'<p>Email me at <a href="mailto:'.$SUPPORT_EMAIL.'">'.$SUPPORT_EMAIL.'</a> for issues with comic listings, your account, site problems, etc. Email <a href="mailto:'.$FEEDBACK_EMAIL.'">'.$FEEDBACK_EMAIL.'</a> if you have feedback or suggestions. You can also reach me on Twitter <a href="https://twitter.com/'.$TW_HANDLE.'">@'.$TW_HANDLE.'</a>.</p>')
 );
 ?>
   </head>

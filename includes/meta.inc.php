@@ -9,7 +9,7 @@
 <?php }?>
     <meta name="Description" content="<?php if ($comic_summary){ echo truncate($comic_summary);}else{ echo "A webcomic directory and bookmark manager.";} ?>" />
 
-    <meta name="twitter:site" content="@HANDLE">
+    <meta name="twitter:site" content="@<?php echo $TW_HANDLE;?>">
     <meta property="og:title" content="<?php if (basename($_SERVER['SCRIPT_FILENAME']) == "comicinfo.php"){echo $comic_name.' - ';}?>Archive Binge" />
     <meta name="twitter:title" content="<?php if (basename($_SERVER['SCRIPT_FILENAME']) == "comicinfo.php"){echo $comic_name.' - ';}?>Archive Binge" />
     <meta property="og:type" content="website" />

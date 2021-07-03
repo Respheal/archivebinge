@@ -26,8 +26,7 @@ require_once("includes/css.inc.php");
 
 <h2>Social Media</h2>
 
-<p>Twitter: <a href="https://twitter.com/HANDLE">@HANDLE</a></p>
-<p>Facebook: <a href="https://www.facebook.com/HANDLE">@HANDLE</a></p>
+<p>Twitter: <a href="https://twitter.com/HANDLE">@<?php echo $TW_HANDLE; ?></a></p>
 
 <h2>Other</h2>
 

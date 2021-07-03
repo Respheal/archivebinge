@@ -211,7 +211,7 @@ if ($oauthUser){
 
                 $iv_size = openssl_cipher_iv_length("aes-256-ctr");
                 $iv = openssl_random_pseudo_bytes($iv_size);
-                $cookie_value = openssl_encrypt(json_encode($cookie_data),"aes-256-ctr",$secretkey, 0, $iv);
+                $cookie_value = openssl_encrypt(json_encode($cookie_data),"aes-256-ctr",$SECRET_KEY, 0, $iv);
                 $encrypted_cookie = $iv.$cookie_value;
 
                 setcookie($cookie_name, $encrypted_cookie, time() + (86400 * 30 * 3), "/");
