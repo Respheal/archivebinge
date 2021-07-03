@@ -1,3 +1,4 @@
+<?php require_once 'includes/conf.inc.php';?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,8 +15,8 @@
     <meta property="og:type" content="website" />
 <?php if (basename($_SERVER['SCRIPT_FILENAME']) == "comicinfo.php" && $comic_image){?>
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="https://DOMAIN.com<?php echo '/assets/usr_imgs/banners/'.$comic_image.'?v='.rand(); ?>" />
-    <meta name="twitter:image" content="https://DOMAIN.COM<?php echo '/assets/usr_imgs/banners/'.$comic_image.'?v='.rand(); ?>">
+    <meta property="og:image" content="https://<?php echo $DOMAIN.'/assets/usr_imgs/banners/'.$comic_image.'?v='.rand(); ?>" />
+    <meta name="twitter:image" content="https://<?php echo $DOMAIN.'/assets/usr_imgs/banners/'.$comic_image.'?v='.rand(); ?>">
     <!--<meta property="og:image:width" content="600" />-->
     <meta property="og:image:height" content="180" />
 <?php }?>

@@ -1,4 +1,6 @@
 <?php
+require_once 'includes/conf.inc.php';
+
 if(!session_id()){
     session_start();
 }
@@ -11,6 +13,6 @@ include_once 'twitter/twitteroauth.php';
  */
 $consumerKey = '';
 $consumerSecret = '';
-$redirectURL = 'https://DOMAIN.com/login.php';
+$redirectURL = 'https://'.$DOMAIN.'/login.php';
 
 ?>

@@ -1,3 +1,4 @@
+<?php require_once 'includes/conf.inc.php';?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +10,7 @@
 <meta property="og:title" content="Archive Binge">
 <meta property="og:description" content="">
 <meta property="og:image" content="">
-<meta property="og:url" content="https://DOMAIN.com/">
+<meta property="og:url" content="https://<?php echo $DOMAIN; ?>/">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:site_name" content="Archive Binge">
 <meta name="twitter:image:alt" content="">

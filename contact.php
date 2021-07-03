@@ -20,9 +20,9 @@ require_once("includes/css.inc.php");
 
 <h2>Email</h2>
 
-<p>Issues with comic listings, your account, site problems: <a href="mailto:support@DOMAIN.com">support@DOMAIN.com</a></p>
-<p>Address for feedback, suggestions, or bug reports: <a href="mailto:feedback@DOMAIN.com">feedback@DOMAIN.com</a></p>
-<p>Abuse complaints for listings that violate the <a href="/tos">Terms of Service</a>: <a href="mailto:abuse@DOMAIN.com">abuse@DOMAIN.com</a><p>
+<p>Issues with comic listings, your account, site problems: <a href="mailto:<?php echo $SUPPORT_EMAIL; ?>"><?php echo $SUPPORT_EMAIL; ?></a></p>
+<p>Address for feedback, suggestions, or bug reports: <a href="mailto:<?php echo $FEEDBACK_EMAIL; ?>"><?php echo $FEEDBACK_EMAIL; ?></a></p>
+<p>Abuse complaints for listings that violate the <a href="/tos">Terms of Service</a>: <a href="mailto:<?php echo $ABUSE_EMAIL; ?>"><?php echo $ABUSE_EMAIL; ?></a><p>
 
 <h2>Social Media</h2>
 
