@@ -1,4 +1,4 @@
-<?php require_once 'includes/conf.inc.php';?>
+<?php require_once '../includes/conf.inc.php';?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
