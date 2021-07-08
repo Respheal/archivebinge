@@ -24,8 +24,8 @@ $TW_KEY = '';        // Twitter Dev Key
 $TW_SECRET = '';     // Twitter Secret
 
 // Analytics Config
-$GOOGLE_ANALYTICS_ENABLED = False
-$GOOGLE_ANALYTICS_ID = '' // Google Analytics Tracking ID
+$GOOGLE_ANALYTICS_ENABLED = False;
+$GOOGLE_ANALYTICS_ID = ''; // Google Analytics Tracking ID
 
 /* DO NOT EDIT BELOW THIS POINT */
 
