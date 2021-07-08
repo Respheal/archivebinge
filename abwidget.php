@@ -3,7 +3,7 @@ header('Content-Type: application/javascript');
 
 require_once("includes/conf.inc.php");
 $conn = dbConnect();
-$imgpath = "https://".$domain."/assets/images/hotlink-ok/";
+$imgpath = "https://".$DOMAIN."/assets/images/hotlink-ok/";
 
 $comic = mysqli_real_escape_string($conn, filter_var($_GET['comic'], FILTER_SANITIZE_NUMBER_INT));
 $info = filter_var($_GET['info-only'], FILTER_SANITIZE_STRING);
