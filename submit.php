@@ -191,7 +191,7 @@ echo '</div>
 }?>
 <form class="form-group" action="/submit" method="post">
 
-<div class="alert alert-warning" role="warning">Note: Submission is still a hit-or-miss process that needs a lot of fine-tuning. While most comics <em>should</em> work, a lot won't yet. For now, you can submit comics that can't currently be crawled to <a href="mailto:support@DOMAIN.com?subject=Comic Submission&body=First page link: ">support@DOMAIN.com</a> and I'll work on adapting the crawler for them asap.<br />
+<div class="alert alert-warning" role="warning">Note: Submission is still a hit-or-miss process that needs a lot of fine-tuning. While most comics <em>should</em> work, a lot won't yet. For now, you can submit comics that can't currently be crawled to <a href="mailto:<?php echo $SUPPORT_EMAIL; ?>?subject=Comic Submission&body=First page link: "><?php echo $SUPPORT_EMAIL; ?></a> and I'll work on adapting the crawler for them asap.<br />
 The list of comics currently known to be broken with the crawler can be found <a href="">here.</a></div>
 
   <div class="form-group">

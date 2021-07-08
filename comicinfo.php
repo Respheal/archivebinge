@@ -291,7 +291,7 @@ require_once("includes/css.inc.php");
 
             <?php if (strpos($comic_pages[0], 'webtoon') !== false || strpos($comic_pages[0], 'smackjeeves') !== false ||$reader_options['style'] == 'webtoons') { ?><!--Webtoons Reader-->
             <div class="alert alert-info" role="alert">
-                <strong>Heads up!</strong> The Reader iframe is disabled on this comic. <a href="https://DOMAIN.COM/faq#question-14">More info here!</a>
+                <strong>Heads up!</strong> The Reader iframe is disabled on this comic. <a href="https://<?php echo $DOMAIN; ?>/faq#question-14">More info here!</a>
             </div><?php } ?>
 
             <!--summary-->
@@ -395,7 +395,7 @@ require_once("includes/css.inc.php");
                         <div class="panel-body">
                             <ol>
                                 <?php if (strpos($comic_pages[0], 'webtoon') !== false || strpos($comic_pages[0], 'smackjeeves') !== false ||$reader_options['style'] == 'webtoons') {foreach ($comic_pages as $page) {echo '<li class="pagelist"><a target="_blank" href="' . $page . '">' . $page . '</a></li>';}}
-                                else{ $i=0; foreach ($comic_pages as $page) {echo '<li class="pagelist"><a href="http://DOMAIN.COM/reader/'.$comic_id . '/' . $i . '">' . $page . '</a></li>';$i++;}} ?>
+                                else{ $i=0; foreach ($comic_pages as $page) {echo '<li class="pagelist"><a href="http://'.$DOMAIN.'/reader/'.$comic_id . '/' . $i . '">' . $page . '</a></li>';$i++;}} ?>
                             </ol>
                         </div><!--list body-->
                     </div><!--pagelist-->
@@ -443,7 +443,7 @@ require_once("includes/css.inc.php");
                                 ?>
                                 <?php }else{echo '<a href="/login.php?page=comic&id='.$comic_id.'" class="list-group-item">Login</a>'; } ?>
                                 <a href="/widgets/<?php echo $comic_id; ?>" class="list-group-item">Widgets</a>
-                                <a href="mailto:support@DOMAIN.COM?Subject=Issue%20Report: <?php echo urlencode($comic_name); ?>" target="_blank" class="list-group-item">Report Issue</a>
+                                <a href="mailto:<?php echo $SUPPORT_EMAIL; ?>?Subject=Issue%20Report: <?php echo urlencode($comic_name); ?>" target="_blank" class="list-group-item">Report Issue</a>
                             </div><!--list group-->
                             </form>
                         </div><!--panel body-->

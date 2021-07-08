@@ -1,4 +1,6 @@
 <?php
+require_once 'includes/conf.inc.php';
+
 if(!session_id()){
     session_start();
 }
@@ -14,9 +16,9 @@ use Facebook\Exceptions\FacebookSDKException;
 /*
  * Configuration and setup Facebook SDK
  */
-$appId         = ''; //Facebook App ID
-$appSecret     = ''; //Facebook App Secret
-$redirectURL   = 'https://DOMAIN.com/login.php'; //Callback URL
+$appId         = $FB_APP_ID; //Facebook App ID
+$appSecret     = $FB_APP_SECRET; //Facebook App Secret
+$redirectURL   = 'https://'.$DOMAIN.'/login.php'; //Callback URL
 $fbPermissions = array('email');  //Optional permissions
 
 $fb = new Facebook(array(

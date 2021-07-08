@@ -1,4 +1,6 @@
 <?php
+require_once 'includes/conf.inc.php';
+
 if(!session_id()){
     session_start();
 }
@@ -9,8 +11,8 @@ include_once 'twitter/twitteroauth.php';
 /*
  * Configuration and setup Twitter API
  */
-$consumerKey = '';
-$consumerSecret = '';
-$redirectURL = 'https://DOMAIN.com/login.php';
+$consumerKey = $TW_KEY;
+$consumerSecret = $TW_SECRET;
+$redirectURL = 'https://'.$DOMAIN.'/login.php';
 
 ?>

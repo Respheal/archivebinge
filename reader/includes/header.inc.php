@@ -23,7 +23,7 @@ if(isset($_COOKIE["abUser"]) && !isset($_SESSION['user_id'])) {
     
     $iv_size = openssl_cipher_iv_length("aes-256-ctr");
     $iv = substr($_COOKIE["abUser"], 0, $iv_size);
-    $cookie = json_decode(openssl_decrypt(substr($_COOKIE["abUser"], $iv_size), "aes-256-ctr", $secretkey, 0, $iv));
+    $cookie = json_decode(openssl_decrypt(substr($_COOKIE["abUser"], $iv_size), "aes-256-ctr", $SECRET_KEY, 0, $iv));
     $token = $cookie[1];
     
     $stmt = $conn->prepare("select user_id from user_cookies where token = ?");
@@ -45,7 +45,7 @@ if(isset($_COOKIE["abUser"]) && !isset($_SESSION['user_id'])) {
         $iv_size = openssl_cipher_iv_length("aes-256-ctr");
         $iv = openssl_random_pseudo_bytes($iv_size);
 
-        $cookie_value = openssl_encrypt(json_encode($cookie_data),"aes-256-ctr",$secretkey, 0, $iv);
+        $cookie_value = openssl_encrypt(json_encode($cookie_data),"aes-256-ctr",$SECRET_KEY, 0, $iv);
         $encrypted_cookie = $iv.$cookie_value;
         setcookie("abUser", $encrypted_cookie, time() + (86400 * 30 * 3), "/");
         

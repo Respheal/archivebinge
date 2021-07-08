@@ -88,7 +88,7 @@ if (isset($_POST) && !empty($_POST)){
 
 <h2>Author Comment</h2>
 
-<p>If you cannot edit the DNS or the HTML or your webcomic site, leave the following code in one of the <strong>author comments</strong> of your comic. Send <strong>a link to the page that contains the code</strong> to <a href="mailto:support@DOMAIN.COM&subject=<?php echo $comicid ?>+<?php echo $username; ?>%20Claim">support@DOMAIN.COM</a> and we can set your user as the owner of <a href="/comic/<?php echo $comic_id; ?>"><em><?php echo $comic_name; ?></em></a>. Please note that the code alone is not sufficient as we require some form of proof that you are the actual owner of the comic (such as the ability to make author comments or edit the comic site). This method is manual and may take up to 72 hours.</p>
+<p>If you cannot edit the DNS or the HTML or your webcomic site, leave the following code in one of the <strong>author comments</strong> of your comic. Send <strong>a link to the page that contains the code</strong> to <a href="mailto:<?php echo $SUPPORT_EMAIL; ?>&subject=<?php echo $comicid ?>+<?php echo $username; ?>%20Claim"><?php echo $SUPPORT_EMAIL; ?></a> and we can set your user as the owner of <a href="/comic/<?php echo $comic_id; ?>"><em><?php echo $comic_name; ?></em></a>. Please note that the code alone is not sufficient as we require some form of proof that you are the actual owner of the comic (such as the ability to make author comments or edit the comic site). This method is manual and may take up to 72 hours.</p>
 
 <pre><?php echo $claim; ?></pre>
     </div><!--panel body-->

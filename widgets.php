@@ -34,7 +34,7 @@ $stmt->fetch();
     <div class="panel-heading">Button (117x30px)</div>
     <div class="panel-body">
         <p><script src="/abwidget2.php?comic=<?php echo $comic_id; ?>&size=button"></script></p>
-        <p><pre>&lt;script src="https://archivebinge.com/abwidget.php?comic=<?php echo $comic_id; ?>&size=button"&gt;&lt;/script&gt;</pre></p>
+        <p><pre>&lt;script src="https://<?php echo $DOMAIN; ?>/abwidget.php?comic=<?php echo $comic_id; ?>&size=button"&gt;&lt;/script&gt;</pre></p>
     </div>
 </div>
 
@@ -42,7 +42,7 @@ $stmt->fetch();
     <div class="panel-heading">Rectangle (117x60px)</div>
     <div class="panel-body">
         <p><script src="/abwidget2.php?comic=<?php echo $comic_id; ?>&size=rectangle"></script></p>
-        <p><pre>&lt;script src="https://archivebinge.com/abwidget.php?comic=<?php echo $comic_id; ?>&size=rectangle"&gt;&lt;/script&gt;</pre></p>
+        <p><pre>&lt;script src="https://<?php echo $DOMAIN; ?>/abwidget.php?comic=<?php echo $comic_id; ?>&size=rectangle"&gt;&lt;/script&gt;</pre></p>
     </div>
 </div>
 
@@ -50,7 +50,7 @@ $stmt->fetch();
     <div class="panel-heading">Half Banner (234x60px)</div>
     <div class="panel-body">
         <p><script src="/abwidget2.php?comic=<?php echo $comic_id; ?>&size=halfbanner"></script></p>
-        <p><pre>&lt;script src="https://archivebinge.com/abwidget.php?comic=<?php echo $comic_id; ?>&size=halfbanner"&gt;&lt;/script&gt;</pre></p>
+        <p><pre>&lt;script src="https://<?php echo $DOMAIN; ?>/abwidget.php?comic=<?php echo $comic_id; ?>&size=halfbanner"&gt;&lt;/script&gt;</pre></p>
     </div>
 </div>
 
@@ -58,19 +58,19 @@ $stmt->fetch();
     <div class="panel-heading">Square (125x125px)</div>
     <div class="panel-body">
         <p><script src="/abwidget2.php?comic=<?php echo $comic_id; ?>&size=square"></script></p>
-        <p><pre>&lt;script src="https://archivebinge.com/abwidget.php?comic=<?php echo $comic_id; ?>&size=square"&gt;&lt;/script&gt;</pre></p>
+        <p><pre>&lt;script src="https://<?php echo $DOMAIN; ?>/abwidget.php?comic=<?php echo $comic_id; ?>&size=square"&gt;&lt;/script&gt;</pre></p>
     </div>
 </div>
 
 <h2>Info Page Only</h2>
 
-<p>These widgets will link directly to <a href="/comic/<?php echo $comic_id; ?>">http://archivebinge.com/comic/<?php echo $comic_id; ?></a> regardless of where they are placed.</a>
+<p>These widgets will link directly to <a href="/comic/<?php echo $comic_id; ?>">http://<?php echo $DOMAIN; ?>/comic/<?php echo $comic_id; ?></a> regardless of where they are placed.</a>
 
 <div class="panel panel-default">
     <div class="panel-heading">Button (117x30px)</div>
     <div class="panel-body">
         <p><script src="/abwidget2.php?comic=<?php echo $comic_id; ?>&info=y&size=button"></script></p>
-        <p><pre>&lt;script src="https://archivebinge.com/abwidget.php?comic=<?php echo $comic_id; ?>&info=y&size=button"&gt;&lt;/script&gt;</pre></p>
+        <p><pre>&lt;script src="https://<?php echo $DOMAIN; ?>/abwidget.php?comic=<?php echo $comic_id; ?>&info=y&size=button"&gt;&lt;/script&gt;</pre></p>
     </div>
 </div>
 
@@ -78,7 +78,7 @@ $stmt->fetch();
     <div class="panel-heading">Rectangle (117x60px)</div>
     <div class="panel-body">
         <p><script src="/abwidget2.php?comic=<?php echo $comic_id; ?>&info=y&size=rectangle"></script></p>
-        <p><pre>&lt;script src="https://archivebinge.com/abwidget.php?comic=<?php echo $comic_id; ?>&info=y&size=rectangle"&gt;&lt;/script&gt;</pre></p>
+        <p><pre>&lt;script src="https://<?php echo $DOMAIN; ?>/abwidget.php?comic=<?php echo $comic_id; ?>&info=y&size=rectangle"&gt;&lt;/script&gt;</pre></p>
     </div>
 </div>
 
@@ -86,7 +86,7 @@ $stmt->fetch();
     <div class="panel-heading">Half Banner (234x60px)</div>
     <div class="panel-body">
         <p><script src="/abwidget2.php?comic=<?php echo $comic_id; ?>&info=y&size=halfbanner"></script></p>
-        <p><pre>&lt;script src="https://archivebinge.com/abwidget.php?comic=<?php echo $comic_id; ?>&info=y&size=halfbanner"&gt;&lt;/script&gt;</pre></p>
+        <p><pre>&lt;script src="https://<?php echo $DOMAIN; ?>/abwidget.php?comic=<?php echo $comic_id; ?>&info=y&size=halfbanner"&gt;&lt;/script&gt;</pre></p>
     </div>
 </div>
 
@@ -94,7 +94,7 @@ $stmt->fetch();
     <div class="panel-heading">Square (125x125px)</div>
     <div class="panel-body">
         <p><script src="/abwidget2.php?comic=<?php echo $comic_id; ?>&info=y&size=square"></script></p>
-        <p><pre>&lt;script src="https://archivebinge.com/abwidget.php?comic=<?php echo $comic_id; ?>&info=y&size=square"&gt;&lt;/script&gt;</pre></p>
+        <p><pre>&lt;script src="https://<?php echo $DOMAIN; ?>/abwidget.php?comic=<?php echo $comic_id; ?>&info=y&size=square"&gt;&lt;/script&gt;</pre></p>
     </div>
 </div>
 

@@ -211,7 +211,7 @@ if ($oauthUser){
 
                 $iv_size = openssl_cipher_iv_length("aes-256-ctr");
                 $iv = openssl_random_pseudo_bytes($iv_size);
-                $cookie_value = openssl_encrypt(json_encode($cookie_data),"aes-256-ctr",$secretkey, 0, $iv);
+                $cookie_value = openssl_encrypt(json_encode($cookie_data),"aes-256-ctr",$SECRET_KEY, 0, $iv);
                 $encrypted_cookie = $iv.$cookie_value;
 
                 setcookie($cookie_name, $encrypted_cookie, time() + (86400 * 30 * 3), "/");
@@ -230,8 +230,7 @@ if ($oauthUser){
         }
 
 }
-require_once("includes/meta.inc.php");
-require_once("includes/css.inc.php");?>
+?>
 <style>.btn-group.special {
   display: flex;
   margin-bottom:15px;
@@ -270,7 +269,7 @@ if($_GET['error']){
     <div class="alert alert-warning" role="alert">';
     if($_GET['error'] == 1){echo 'Error : Failed to receieve access token';}
     elseif($_GET['error'] == 2){echo 'Error : Failed to get user information';}
-    else{echo 'Everything broke. I don\'t know how. Send me details at <a href="mailto:support@DOMAIN.com">support@DOMAIN.com</a> and know that you have bested me.';}
+    else{echo 'Everything broke. I don\'t know how. Send me details at <a href="mailto:'.$SUPPORT_EMAIL.'">'.$SUPPORT_EMAIL.'</a> and know that you have bested me.';}
     echo '</a></div>
 </div>
 </div>';}

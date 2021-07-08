@@ -16,7 +16,7 @@ $sitequestions = array(
 <p>If a comic has not been claimed, anyone with an account may contribute to the comic\'s listing.</p>'),
     array(
         'question'=>'Someone added a mirror of my comic as a listing so now there are two listings for the same comic',
-        'answer'=>'<p>There are pros and cons to having separate listings for each mirror: On one hand, you may want the separate entries so the reader works on any of your comic\'s mirrors. However, this does dilute your readers and subscribers a bit, so if site ranking is something you care about I would recommend against splitting the entries. If you would like the second listing removed, please claim both listings (or one of them if it\'s obvious they\'re the same comic) and email me which listing you would like removed at <a href="mailto:admin@archivebinge.com">admin@archivebinge.com</a>.</p>'),
+        'answer'=>'<p>There are pros and cons to having separate listings for each mirror: On one hand, you may want the separate entries so the reader works on any of your comic\'s mirrors. However, this does dilute your readers and subscribers a bit, so if site ranking is something you care about I would recommend against splitting the entries. If you would like the second listing removed, please claim both listings (or one of them if it\'s obvious they\'re the same comic) and email me which listing you would like removed at <a href="mailto:'.$SUPPORT_EMAIL.'">'.$SUPPORT_EMAIL.'</a>.</p>'),
     array(
         'question'=>'It\'s not finding pages for my comic!',
         'answer'=>'<p>Archive Binge uses a few different methods to find comic pages:</p>
@@ -39,16 +39,16 @@ $sitequestions = array(
         </ul>
     </li>
 </ul>
-<p>Once you\'ve implemented one of these methods, try initiating a recrawl. If it still doesn\'t catch all of the pages, email me the comic url at <a href="mailto:admin@archivebinge.com">admin@archivebinge.com</a> and I\'ll see what I can do.</p>'),
+<p>Once you\'ve implemented one of these methods, try initiating a recrawl. If it still doesn\'t catch all of the pages, email me the comic url at <a href="mailto:'.$SUPPORT_EMAIL.'">'.$SUPPORT_EMAIL.'</a> and I\'ll see what I can do.</p>'),
     array(
         'question'=>'Some older pages are missing from my comic\'s listing/reader!',
-        'answer'=>'<p>Uhhhhh......Unless you just recently added those pages to your comic (in which case, see next question), I honestly have no idea how that would happen. Please email me your comic at <a href="mailto:admin@archivebinge.com">admin@archivebinge.com</a>. For science. Comic owners can also manually edit the list of pages for their claimed comics on the Edit screen.</p>'),
+        'answer'=>'<p>Uhhhhh......Unless you just recently added those pages to your comic (in which case, see next question), I honestly have no idea how that would happen. Please email me your comic at <a href="mailto:'.$SUPPORT_EMAIL.'">'.$SUPPORT_EMAIL.'</a>. For science. Comic owners can also manually edit the list of pages for their claimed comics on the Edit screen.</p>'),
     array(
         'question'=>'I removed/reordered some pages from my comic and now the page listing/reader is wrong!',
         'answer'=>'<p>It takes AB a little bit to figure out you\'ve changed pages. AB currently prioritizes crawling newly-added comics first, then manually-requested crawls, then comics that have gone the longest without a crawl. If you want your page crawled sooner, put in a crawl request (on the info page) and it will be recrawled soon-ish. If you REALLY need it updated sooner or the crawler isn\'t working for whatever reason, you can manually edit the page list on the Crawler Configuration page.</p>'),
     array(
         'question'=>'My primary mirror is at Tapas/Webtoon/Smack Jeeves or another place I can\'t edit the page HTML or DNS to claim the comic.',
-        'answer'=>'<p>On your profile page or the Claim page for the comic, you\'ll find a unique Claim token. Drop that token in the author comments or tags of the comic (the comic site, not the AB listing) and <a href="mailto:admin@archivebinge.com">email me</a> the comic page/episode with the token-comment. If the token is valid, I\'ll set you up as the owner of the comic so you can edit the details.</p>')
+        'answer'=>'<p>On your profile page or the Claim page for the comic, you\'ll find a unique Claim token. Drop that token in the author comments or tags of the comic (the comic site, not the AB listing) and <a href="mailto:'.$SUPPORT_EMAIL.'">email me</a> the comic page/episode with the token-comment. If the token is valid, I\'ll set you up as the owner of the comic so you can edit the details.</p>')
 );
 
 $tagquestions = array(
@@ -61,16 +61,16 @@ $tagquestions = array(
 </ul>'),
     array(
         'question'=>'You\'re missing a tag/warning for [x]:',
-        'answer'=>'<p>Probably! If there’s a tag you\'d like to make use of and there\'s nothing close enough in the existing tags, please shoot me an email at <a href="mailto:admin@archivebinge.com">admin@archivebinge.com</a> and I\'ll consider adding it. I won\'t add tags that are too similar to an existing one, any tags that are offensive (instead of <em>describing</em> offensiveness), tags so generic that literally every comic would fall under it (e.g. a “webcomic” tag) or so specific that they could only ever fit one comic. This means that there won\'t be a tag for “contains stubborn amnesiac jerk that gets himself drowned because of trust issues”.</p>'),
+        'answer'=>'<p>Probably! If there’s a tag you\'d like to make use of and there\'s nothing close enough in the existing tags, please shoot me an email at <a href="mailto:'.$FEEDBACK_EMAIL.'">'.$FEEDBACK_EMAIL.'</a> and I\'ll consider adding it. I won\'t add tags that are too similar to an existing one, any tags that are offensive (instead of <em>describing</em> offensiveness), tags so generic that literally every comic would fall under it (e.g. a “webcomic” tag) or so specific that they could only ever fit one comic. This means that there won\'t be a tag for “contains stubborn amnesiac jerk that gets himself drowned because of trust issues”.</p>'),
     array(
         'question'=>'You should rename tag/warning [x] to [y].',
-        'answer'=>'<p>Email me at <a href="mailto:admin@archivebinge.com">admin@archivebinge.com</a>. If the issue isn\'t obvious (i.e. I typo\'d a tag/warning), it may help to provide a reason for the change\'s necessity.</p>'),
+        'answer'=>'<p>Email me at <a href="mailto:'.$FEEDBACK_EMAIL.'">'.$FEEDBACK_EMAIL.'</a>. If the issue isn\'t obvious (i.e. I typo\'d a tag/warning), it may help to provide a reason for the change\'s necessity.</p>'),
     array(
         'question'=>'I can\'t use [x] tag on my comic!',
-        'answer'=>'<p>Some tags are special and have to be placed on a webcomic by an administrator. Mostly these are tags for collectives or publishers (e.g. Hiveworks, Spider Forest). If your comic belongs to one of these groups or there\'s a special tag applicable to your comic, email me at<a href="mailto:admin@archivebinge.com"> admin@archivebinge.com</a> with the comic page listing and the tag and I can edit it in.</p>'),
+        'answer'=>'<p>Some tags are special and have to be placed on a webcomic by an administrator. Mostly these are tags for collectives or publishers (e.g. Hiveworks, Spider Forest). If your comic belongs to one of these groups or there\'s a special tag applicable to your comic, email me at <a href="mailto:'.$SUPPORT_EMAIL.'">'.$SUPPORT_EMAIL.'</a> with the comic page listing and the tag and I can edit it in.</p>'),
     array(
         'question'=>'A comic is missing content warnings!',
-        'answer'=>'<p>If the comic is unclaimed, you can add content warnings! If the comic is claimed, unfortunately the comic listing requires the webcomic owner to add the content warnings. If one is missing a content warning and the comic is egregiously in need of one, email me at <a href="mailto:admin@archivebinge.com">admin@archivebinge.com</a> with the comic, the tag that it needs, and an example from the comic (page url, etc) of the content that necessitates the tag.</p>
+        'answer'=>'<p>If the comic is unclaimed, you can add content warnings! If the comic is claimed, unfortunately the comic listing requires the webcomic owner to add the content warnings. If one is missing a content warning and the comic is egregiously in need of one, email me at <a href="mailto:'.$SUPPORT_EMAIL.'">'.$SUPPORT_EMAIL.'</a> with the comic, the tag that it needs, and an example from the comic (page url, etc) of the content that necessitates the tag.</p>
 <p>Please note that I won\'t honor every single request like this. If there is question regarding the validity of the tag\'s necessity, the request may be denied or deferred to the comic\'s owner for a final decision. However, I accept that my judgement may be wrong&mdash;if I receive multiple requests for a tag to be added to a comic, the issue will be reopened and re-reviewed.</p>
 <p><strong>If an admin adds a tag to a comic because the owner neglected or refused to, the content tag will not be removed without appeal.</strong></p>')
 );
@@ -101,7 +101,7 @@ $metaquestions = array(
 <p>If you want to go the self-hosting route, you can find some extra info here: <a href="https://nattosoup.blogspot.com/2017/06/self-hosting-your-webcomic-alternatives.html" target="_blank">Self-Hosting Your Webcomic: Alternatives to Tapas, Webtoons</a> or here: <a href="http://freejeeves.com/#creators" target="_blank">Free Jeeves</a></p>'),
     array(
         'question'=>'Any other issues/questions',
-        'answer'=>'<p>Email me at <a href="mailto:admin@archivebinge.com">admin@archivebinge.com</a> for issues with comic listings, your account, site problems, etc. Email <a href="mailto:admin@archivebinge.com">admin@archivebinge.com</a> if you have feedback or suggestions. You can also reach me on Twitter <a href="https://twitter.com/HANDLE">@HANDLE</a>.</p>')
+        'answer'=>'<p>Email me at <a href="mailto:'.$SUPPORT_EMAIL.'">'.$SUPPORT_EMAIL.'</a> for issues with comic listings, your account, site problems, etc. Email <a href="mailto:'.$FEEDBACK_EMAIL.'">'.$FEEDBACK_EMAIL.'</a> if you have feedback or suggestions. You can also reach me on Twitter <a href="https://twitter.com/'.$TW_HANDLE.'">@'.$TW_HANDLE.'</a>.</p>')
 );
 ?>
   </head>

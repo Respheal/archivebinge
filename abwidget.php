@@ -3,7 +3,7 @@ header('Content-Type: application/javascript');
 
 require_once("includes/conf.inc.php");
 $conn = dbConnect();
-$imgpath = "https://archivebinge.com/assets/images/hotlink-ok/";
+$imgpath = "https://".$domain."/assets/images/hotlink-ok/";
 
 $comic = mysqli_real_escape_string($conn, filter_var($_GET['comic'], FILTER_SANITIZE_NUMBER_INT));
 $info = filter_var($_GET['info-only'], FILTER_SANITIZE_STRING);
@@ -44,10 +44,11 @@ else
 document.getElementsByTagName("head")[0].appendChild(css);
 
 if (pageindex < 0) {
-    document.write("<a href='https://archivebinge.com/comic/" + comic_id + "' title='Read this comic on Archive Binge'><div class='ab_widget ab_override'></div></a>");
+    document.write("<a href='https://<?php echo $DOMAIN; ?>/comic/" + comic_id + "' title='Read this comic on Archive Binge'><div class='ab_widget ab_override'></div></a>");
 } else {
-    document.write("<a href='http://archivebinge.com/reader/" + comic_id + "/" + pageindex + "' title='Read this comic on Archive Binge'><div class='ab_widget ab_override'></div></a>");}
+    document.write("<a href='http://<?php echo $DOMAIN; ?>/reader/" + comic_id + "/" + pageindex + "' title='Read this comic on Archive Binge'><div class='ab_widget ab_override'></div></a>");
+}
 
 <?php } else { ?>
-document.write("<a href='https://archivebinge.com/comic/" + comic_id + "' title='Read this comic on Archive Binge'><div class='ab_widget ab_override'></div></a>");
+document.write("<a href='https://<?php echo $DOMAIN; ?>/comic/" + comic_id + "' title='Read this comic on Archive Binge'><div class='ab_widget ab_override'></div></a>");
 <?php } $conn->close(); ?>
