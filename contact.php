@@ -28,10 +28,6 @@ require_once("includes/css.inc.php");
 
 <p>Twitter: <a href="https://twitter.com/HANDLE">@<?php echo $TW_HANDLE; ?></a></p>
 
-<h2>Other</h2>
-
-<p></p>
-
 </div>
 
 </div><!--row-->
