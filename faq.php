@@ -25,7 +25,6 @@ $sitequestions = array(
     <li><strong>Archive Binge:</strong> Scrape the comic\'s archive page for the list of pages. Best for comics with large archives or those that can\'t work with the Page Crawl method.</li>
     <li><strong>Tapas:</strong> Tapas comics only. Pull the list of pages from the page listing on any Tapas episode.
     <li><strong>Webtoons:</strong> LINE Webtoons comics only. Pull the list of pages from the episode list page(s).</li>
-    <li><strong>Smack Jeeves:</strong> Smack Jeeves comics only. Pull the list of pages from the episode list.</li>
 </ul>
 <p>If none of the above work, I can manually add pages for a comic and work on adjusting the crawler for that comic. To avoid that situation, follow these recommendations:</p>
 <ul>
@@ -47,7 +46,7 @@ $sitequestions = array(
         'question'=>'I removed/reordered some pages from my comic and now the page listing/reader is wrong!',
         'answer'=>'<p>It takes AB a little bit to figure out you\'ve changed pages. AB currently prioritizes crawling newly-added comics first, then manually-requested crawls, then comics that have gone the longest without a crawl. If you want your page crawled sooner, put in a crawl request (on the info page) and it will be recrawled soon-ish. If you REALLY need it updated sooner or the crawler isn\'t working for whatever reason, you can manually edit the page list on the Crawler Configuration page.</p>'),
     array(
-        'question'=>'My primary mirror is at Tapas/Webtoon/Smack Jeeves or another place I can\'t edit the page HTML or DNS to claim the comic.',
+        'question'=>'My primary mirror is at Tapas/Webtoon or another place I can\'t edit the page HTML or DNS to claim the comic.',
         'answer'=>'<p>On your profile page or the Claim page for the comic, you\'ll find a unique Claim token. Drop that token in the author comments or tags of the comic (the comic site, not the AB listing) and <a href="mailto:'.$SUPPORT_EMAIL.'">email me</a> the comic page/episode with the token-comment. If the token is valid, I\'ll set you up as the owner of the comic so you can edit the details.</p>')
 );
 
@@ -82,7 +81,7 @@ $readingquestions = array(
 <p>Here you can privately subscribe to a webcomic to keep track of your place in the comic, but we\'ll never share that you\'re subscribed to it with anyone. You will not appear on the list of readers (although the comic creator will see a higher number of readers than are actually listed, so they can see the <em>actual</em> number of subscribers&mdash;number, not names), the comic won\'t appear in your friends\' "Friends\' Reading Lists" or recommendations, but the comic (and your bookmark) will appear in your own private reading list.</p>'),
     array(
         'question'=>'Why can\'t I read some comics in the Reader?',
-        'answer'=>'<p>Unfortunately some websites, most predominantly Webtoon, Smack Jeeves, and several Hiveworks comics, make use of a certain response header that prevents other websites from embedding their content in a frame. This is not necessarily a bad thing and is a valid (if somewhat unnecessary in this case) security practice. The downside is it prevents these comics from appearing in the Reader.</p>
+        'answer'=>'<p>Unfortunately some websites, most predominantly Webtoon and several Hiveworks comics, make use of a certain response header that prevents other websites from embedding their content in a frame. This is not necessarily a bad thing and is a valid (if somewhat unnecessary in this case) security practice. The downside is it prevents these comics from appearing in the Reader.</p>
         <p>While <em>technically</em> there is a workaround for this, any workarounds would prevent the traffic from going to the actual webcomic site, which is the opposite of Archive Binge\'s mission. As a compromise, subscribers have the option to manually mark their place in the affected comics. Webcomic owners, if you would like your webcomic to be functional in the Reader, please see the information in this blog post regarding the Reader: <a href="https://archivebinge.com/blog/archive-binge-compatibility/">Archive Binge Compatibility.</a>')
 );
 
